@@ -1,17 +1,8 @@
 # Sales Data Analysis Dashboard
 
-## Project Overview
+## Overview
 
-This project analyzes sales data using Python and provides insights into product performance, regional sales distribution, and monthly sales trends. The dashboard was developed using Pandas, NumPy, and Matplotlib to transform raw sales data into meaningful visualizations that support business decision-making.
-
-## Features
-
-* Product-wise sales analysis
-* Region-wise sales analysis
-* Monthly sales trend visualization
-* Top-performing products identification
-* Data cleaning and preprocessing
-* Exploratory Data Analysis (EDA)
+This project analyzes sales data using Python, Pandas, NumPy, and Matplotlib. The dashboard provides insights into product performance, regional sales distribution, monthly sales trends, and top-selling products.
 
 ## Technologies Used
 
@@ -23,7 +14,7 @@ This project analyzes sales data using Python and provides insights into product
 
 ## Dataset
 
-The dataset contains:
+The dataset contains the following columns:
 
 * Date
 * Product
@@ -31,28 +22,165 @@ The dataset contains:
 * Sales
 * Quantity
 
-## Visualizations
+## Features
 
-1. Sales Per Product (Bar Chart)
-2. Sales Per Region (Bar Chart)
-3. Monthly Sales Trend (Line Chart)
-4. Top Products Distribution (Pie Chart)
+* Sales Per Product Analysis
+* Sales Per Region Analysis
+* Monthly Sales Trend Analysis
+* Top Products Analysis
+* Data Cleaning and Preprocessing
+* Exploratory Data Analysis (EDA)
+
+## Sample Code
+
+```python
+import pandas as pd
+
+df = pd.read_csv("Sales_Data.csv")
+print(df.head())
+```
+
+```python
+sales_by_product = df.groupby("Product")["Sales"].sum()
+print(sales_by_product)
+```
+
+```python
+sales_by_region = df.groupby("Region")["Sales"].sum()
+print(sales_by_region)
+```
+
+## Dashboard Screenshots
+
+### Sales Per Product
+
+![Sales Per Product](images/sales_per_product.png)
+
+### Sales Per Region
+
+![Sales Per Region](images/sales_per_region.png)
+
+### Monthly Sales Trend
+
+![Monthly Sales Trend](images/monthly_sales_trend.png)
+
+### Top Products Analysis
+
+![Top Products](images/top_products.png)
 
 ## Key Insights
 
-* Identified the highest-selling products.
+* Identified top-performing products based on total sales.
 * Compared sales performance across different regions.
-* Analyzed monthly sales trends and business performance.
-* Generated actionable insights through data visualization.
+* Analyzed monthly sales trends and business growth patterns.
+* Generated visual reports to support data-driven decision-making.
 
 ## Learning Outcomes
 
-* Data Cleaning and Preprocessing
+* Data Cleaning
+* Data Analysis
 * Exploratory Data Analysis (EDA)
 * Data Visualization
-* Business Insight Generation
-* Dashboard Development using Python
+* Dashboard Development
+* Business Analytics
 
 ## Author
 
 Gautam Walia
+
+LinkedIn: [www.linkedin.com/in/gautam-walia1106](http://www.linkedin.com/in/gautam-walia1106)
+
+GitHub: https://github.com/gautamwalia11-tech
+# Sales Data Analysis Dashboard
+
+## Overview
+
+This project analyzes sales data using Python, Pandas, NumPy, and Matplotlib. The dashboard provides insights into product performance, regional sales distribution, monthly sales trends, and top-selling products.
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Jupyter Notebook
+
+## Dataset
+
+The dataset contains the following columns:
+
+* Date
+* Product
+* Region
+* Sales
+* Quantity
+
+## Features
+
+* Sales Per Product Analysis
+* Sales Per Region Analysis
+* Monthly Sales Trend Analysis
+* Top Products Analysis
+* Data Cleaning and Preprocessing
+* Exploratory Data Analysis (EDA)
+
+## Sample Code
+
+```python
+import pandas as pd
+
+df = pd.read_csv("Sales_Data.csv")
+print(df.head())
+```
+
+```python
+sales_by_product = df.groupby("Product")["Sales"].sum()
+print(sales_by_product)
+```
+
+```python
+sales_by_region = df.groupby("Region")["Sales"].sum()
+print(sales_by_region)
+```
+
+## Dashboard Screenshots
+
+### Sales Per Product
+
+![Sales Per Product](images/sales_per_product.png)
+
+### Sales Per Region
+
+![Sales Per Region](images/sales_per_region.png)
+
+### Monthly Sales Trend
+
+![Monthly Sales Trend](images/monthly_sales_trend.png)
+
+### Top Products Analysis
+
+![Top Products](images/top_products.png)
+
+## Key Insights
+
+* Identified top-performing products based on total sales.
+* Compared sales performance across different regions.
+* Analyzed monthly sales trends and business growth patterns.
+* Generated visual reports to support data-driven decision-making.
+
+## Learning Outcomes
+
+* Data Cleaning
+* Data Analysis
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Dashboard Development
+* Business Analytics
+
+## Author
+
+Gautam Walia
+
+LinkedIn: [www.linkedin.com/in/gautam-walia1106](http://www.linkedin.com/in/gautam-walia1106)
+
+GitHub: https://github.com/gautamwalia11-tech
